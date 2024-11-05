@@ -4,7 +4,7 @@ resource "aws_lb" "ecs_alb" {
   subnets            = [var.public_subnet_id, var.public_subnetb_id]
   security_groups    = [var.sg_id] 
 
-  tags = {
+  tags = { 
     Name = "ecs-fargate-alb"
   }
 }
