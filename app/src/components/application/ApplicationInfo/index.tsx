@@ -63,7 +63,7 @@ const ApplicationInfo: FC<EditableComponentBaseProps> = ({
       useApplication: checkedApplication,
       useCompute: checkedCompute,
       useNetwork: checkedNetwork,
-    }));
+    })); 
     setEditMode(false);
   }, [checkedApplication, checkedCompute, checkedData,
     checkedIaaS, checkedNetwork, checkedPaaS, checkedSaaS,
