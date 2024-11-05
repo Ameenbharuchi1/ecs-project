@@ -2,8 +2,8 @@ name: Pipelines for ECS Project
 
 on:
   push:
-      paths:
-       - 'app/*'
+    branches:
+        - main
 
 jobs:
   deploy:
