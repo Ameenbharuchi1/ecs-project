@@ -35,7 +35,7 @@ resource "aws_iam_role_policy_attachment" "ecs_execution_role_policy" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 
-resource "aws_cloudwatch_log_group" "ecs_threatmodel_log" {
+resource "aws_cloudwatch_log_group" "ecs_doorfeed_log" {
   name              = "/ecs/threatmodel-log"
   retention_in_days = 7
 }
