@@ -24,6 +24,7 @@ jobs:
 
       - name: Build Docker image
         run: |
+            cd app
             ECR_URI=${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ vars.AWS_REGION }}.amazonaws.com/doorfeed/latest:latest
             echo "ECR_URI=$ECR_URI" >> $GITHUB_ENV
             docker build -t $ECR_URI .
