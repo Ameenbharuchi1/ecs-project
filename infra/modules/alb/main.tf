@@ -2,7 +2,7 @@ resource "aws_lb" "ecs_alb" {
   name               = var.elb-name
   load_balancer_type = var.load_balancer_type
   subnets            = [var.public_subnet_id, var.public_subnetb_id]
-  security_groups    = [var.sg_id]
+  security_groups    = [var.sg_id] 
 
   tags = {
     Name = "ecs-fargate-alb"
