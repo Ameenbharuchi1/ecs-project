@@ -76,8 +76,8 @@ resource "aws_ecs_task_definition" "app" {
   }
   container_definitions = jsonencode([
     {
-      name      = "threatcomposer"
-      image     = "590184076390.dkr.ecr.eu-west-2.amazonaws.com/ecs-project:latest"
+      name      = "doorfeed"
+      image     = "084375562247.dkr.ecr.eu-west-2.amazonaws.com/doorfeed/latest"
       essential = true
       portMappings = [
         {
@@ -113,7 +113,7 @@ resource "aws_ecs_service" "main" {
 
   load_balancer {
     target_group_arn = var.target_group_arn
-    container_name   = "threatcomposer"
+    container_name   = "doorfeed"
     container_port   = 3000
   }
 }
