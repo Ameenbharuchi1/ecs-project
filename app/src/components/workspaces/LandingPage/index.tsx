@@ -35,7 +35,7 @@ const LandingPage: FC = () => {
       header={
         <Header
           variant="h1"
-          description="A threat modeling tool to help humans to reduce time-to-value when threat modeling"
+          description="Doorfeed dummy Web Application deployed via Amazon ECS"
           actions={
             <SpaceBetween direction="horizontal" size="s">
               <Button onClick={() => setFileImportModalVisible(true)}>Import existing</Button>
@@ -45,7 +45,7 @@ const LandingPage: FC = () => {
             </SpaceBetween>
           }
         >
-          Threat Composer
+          DoorFeed dummy app
         </Header>
       }
     >
@@ -69,22 +69,12 @@ const LandingPage: FC = () => {
           <ColumnLayout columns={2}>
             <TextContent>
               <p>
-                We've included a base threat model of the Threat Composer tool
-                itself as an example. The aim is to provide a common reference
-                point for people who are starting off with Threat Composer. You
-                may want to use this as the base threat model as a starting
-                point to generate a contextualised threat model for your own
-                specific needs and deployment of Threat Composer.
+               This web application was deployed using Amazon ECS. The docker image was built and pushed to Amazon ECR.
               </p>
               <ul>
                 <li>
                   To view the example threat model simply switch to the
                   system-defined <b>Example</b> Workspace.
-                </li>
-                <li>
-                  No changes you make within Example workspace will be saved. If
-                  you wish to modify it or use is a base, it's recommended you
-                  Export it, create a new Workspace and Import it.
                 </li>
               </ul>
             </TextContent>
